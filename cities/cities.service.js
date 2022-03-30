@@ -8,8 +8,6 @@ module.exports = {
             const result = city['places'][0]['place name'] + ", " + city['places'][0]['state abbreviation'] + ", " + city['country'];
             return result;
         }
-        else {
-            throw new NotFoundError(`No cities found!`);
-        }
+        throw new NotFoundError(`No cities found!`);
     }
 }
